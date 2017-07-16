@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/lantern"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#E0E0E0"
+	android:orientation="vertical" >
+	<RelativeLayout
+		android:id="@+id/guess_banner_container"
+		android:layout_width="fill_parent"
+		android:layout_height="48dp"
+		android:background="#7bbfea"
+		android:gravity="center_vertical"
+		android:orientation="vertical" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:text="谜语库——猜谜"
+			android:textColor="#ffffffff"
+			android:textSize="20.0dip" />
+	</RelativeLayout>
+	<HorizontalScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="20dp"
+		android:background="#9b95c9"
+		android:gravity="center"
+		android:orientation="horizontal" >
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:background="#33b5e5" >
+			<RadioGroup
+				android:id="@+id/radioGroup"
+				android:layout_width="fill_parent"
+				android:layout_height="49dp"
+				android:layout_alignParentTop="true"
+				android:orientation="horizontal" >
+				<RadioButton
+					android:id="@+id/guess_rand"
+					style="@style/radioButton"
+					android:text="随机" />
+				<RadioButton
+					android:id="@+id/guess_all"
+					style="@style/radioButton"
+					android:text="全部" />
+				<RadioButton
+					android:id="@+id/guess_classic"
+					style="@style/radioButton"
+					android:text="经典" />
+				<RadioButton
+					android:id="@+id/guess_animal"
+					style="@style/radioButton"
+					android:text="动物" />
+				<RadioButton
+					android:id="@+id/guess_love"
+					style="@style/radioButton"
+					android:text="爱情" />
+				<RadioButton
+					android:id="@+id/guess_funny"
+					style="@style/radioButton"
+					android:text="搞笑" />
+				<RadioButton
+					android:id="@+id/guess_child"
+					style="@style/radioButton"
+					android:text="儿童" />
+				<RadioButton
+					android:id="@+id/guess_word"
+					style="@style/radioButton"
+					android:text="字谜" />
+				<RadioButton
+					android:id="@+id/guess_english"
+					style="@style/radioButton"
+					android:text="英语" />
+			</RadioGroup>
+			<ImageView
+				android:id="@+id/img1"
+				android:layout_width="100dp"
+				android:layout_height="4dp"
+				android:layout_alignParentBottom="true"
+				android:background="#33b5e5" />
+		</RelativeLayout>
+	</HorizontalScrollView>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="200dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:background="#f69c9f" >
+		<LinearLayout
+			android:id="@+id/left"
+			android:layout_width="42dp"
+			android:layout_height="200dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:background="#f69c9f"
+			android:orientation="vertical" >
+			<TextView
+				android:id="@+id/previous"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginTop="70dp"
+				android:background="@drawable/left1"
+				android:gravity="center"
+				android:textColor="#ffffffff"
+				android:textSize="20.0dip" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/lanternContent"
+			android:layout_width="fill_parent"
+			android:layout_height="200dp"
+			android:layout_toLeftOf="@+id/right"
+			android:layout_toRightOf="@id/left"
+			android:background="#84bf96"
+			android:orientation="vertical" >
+			<TextView
+				android:id="@+id/guess_hint"
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:layout_marginTop="10dp"
+				android:gravity="center"
+				android:text="长按谜面邀请好友来猜谜。"
+				android:textColor="#102b6a"
+				android:textSize="15.0dip" />
+			<TextView
+				android:id="@+id/guess_riddleDes"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="-30dp"
+				android:gravity="left|center_vertical"
+				android:hint="谜面"
+				android:textColor="#ffffffff"
+				android:textSize="20.0dip" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/right"
+			android:layout_width="42dp"
+			android:layout_height="200dp"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_gravity="center_vertical"
+			android:background="#f69c9f"
+			android:orientation="vertical" >
+			<TextView
+				android:id="@+id/next"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginTop="70dp"
+				android:background="@drawable/right1"
+				android:gravity="center"
+				android:textColor="#ffffffff"
+				android:textSize="20.0dip" />
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:background="#9b95c9"
+		android:orientation="vertical" >
+		<EditText
+			android:id="@+id/guessKey"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:gravity="center"
+			android:hint="我猜猜"
+			android:textColor="#ffffffff"
+			android:textSize="20.0dip" />
+		<Button
+			android:id="@+id/guess"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="确定"
+			android:textColor="#ffffffff"
+			android:textSize="20.0dip" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:layout_gravity="center"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:background="#f69c9f"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/riddleKey"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:hint="查看谜底"
+			android:textColor="#ffffffff"
+			android:textSize="20.0dip" />
+	</LinearLayout>
+</LinearLayout>

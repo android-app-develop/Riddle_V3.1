@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#E0E0E0"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_head_pic"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="5dp"
+		android:layout_weight="1.5"
+		android:background="@drawable/preference_first_item"
+		android:gravity="center_vertical" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_ll_head_tip"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:text="头像"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_head_pic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/default_avatar_shadow"
+			android:contentDescription=""
+			android:scaleType="fitXY" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_one"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_name"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_middle_item" >
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:text="昵称"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="2dp"
+			android:text="未登录"
+			android:textColor="@color/lightgrey"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_two"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_score"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_last_item" >
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:text="我的钻石"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_score"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="25dp"
+			android:text="0"
+			android:textColor="@color/lightgrey"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_score"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_qq"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="2dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_first_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_qq"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:text="邀请QQ好友一起玩儿"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_three"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_qqzone"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_middle_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_qqzone"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:text="分享到qq空间"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_four"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_wechat"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_middle_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_wechat"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:gravity="center_vertical"
+			android:text="邀请微信好友一起玩儿"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_five"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_wechatcircle"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_last_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_wechatcircle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:gravity="center_vertical"
+			android:text="分享到微信朋友圈"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_wechatcircle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_login"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="2dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_first_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_login"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:gravity="center_vertical"
+			android:text="使用QQ登录"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_login"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_love"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_middle_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_love"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:gravity="center_vertical"
+			android:text="我的收藏"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_love"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_advise"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_middle_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_advise"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:gravity="center_vertical"
+			android:text="体验应用获取钻石"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_advise"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/set_personal_info_activity_ll_share"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginBottom="5dp"
+		android:layout_weight="1"
+		android:background="@drawable/preference_last_item" >
+		<TextView
+			android:id="@+id/set_personal_info_activity_tv_share"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_weight="8"
+			android:gravity="center_vertical"
+			android:text="快速分享获取钻石"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+		<ImageView
+			android:id="@+id/set_personal_info_activity_iv_submenu_share"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:contentDescription=""
+			android:src="@drawable/mm_submenu" />
+	</LinearLayout>
+</LinearLayout>

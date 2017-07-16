@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/lantern"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<RelativeLayout
+		android:id="@+id/riddle_banner_container"
+		android:layout_width="fill_parent"
+		android:layout_height="48dp"
+		android:background="#7bbfea"
+		android:gravity="center_vertical"
+		android:orientation="vertical" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:text="谜语库——谜库"
+			android:textColor="#ffffffff"
+			android:textSize="20.0dip" />
+	</RelativeLayout>
+	<com.bingo.sortlist.ClearEditText
+		android:id="@+id/filter_edit"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dip"
+		android:background="@drawable/search_bar_edit_selector"
+		android:drawableLeft="@drawable/search_bar_icon_normal"
+		android:hint="请输入关键字"
+		android:singleLine="true"
+		android:textSize="15.0dip" />
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		<ListView
+			android:id="@+id/riddleList"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center"
+			android:divider="@null" />
+		<TextView
+			android:id="@+id/dialog"
+			android:layout_width="80.0dip"
+			android:layout_height="80.0dip"
+			android:layout_gravity="center"
+			android:background="@drawable/show_head_toast_bg"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			android:textSize="30.0dip"
+			android:visibility="invisible" />
+		<com.bingo.sortlist.SideBar
+			android:id="@+id/sidrbar"
+			android:layout_width="30.0dip"
+			android:layout_height="fill_parent"
+			android:layout_gravity="right|center" />
+		<android.view.ext.SatelliteMenu
+			android:id="@+id/menu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|left"
+			android:layout_margin="2dp" />
+	</FrameLayout>
+</LinearLayout>
